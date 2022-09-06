@@ -15,13 +15,14 @@ use App\Http\Controllers\RegistController;
 |
 */
 
-Route::get('/', function () {
+Route::get('', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
+Route::get('/', function () {
     return view('navbar.layout');
 });
 
-Route::get('login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']); 
 Route::get('register', [RegistController::class, 'index'])->name('register')->middleware('guest');
