@@ -28,7 +28,7 @@
         <div class="container main-menu">
           <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
-              <a href="/" style="color:white; font-size:24px;"><img src="img/ball.png" width="50px" height="50px" alt="" title="Corner" />Corner</a>
+              <a href="/" style="color:white; font-size:24px;"><img src="img/ball.png" width="50px" height="50px" alt="" title="Corner"/>Corner</a>
             </div>
             <nav id="nav-menu-container">
               <ul class="nav-menu">
@@ -49,7 +49,8 @@
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li class="menu-active"><a href="/">Beranda</a></li>
-                <li><a href="#">.......</a></li>
+                <li><a href="{{ route('login') }}">Login</a></li>
+                <li><a href="{{ route('register') }}">Registrasi</a></li>
 
                 </li>
               </ul>

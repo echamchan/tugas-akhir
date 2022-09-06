@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegistController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +22,6 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('navbar.layout');
 });
+
+Route::get('login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('register', [RegistController::class, 'index'])->name('register')->middleware('guest');
