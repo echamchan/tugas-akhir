@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\RegistController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +23,6 @@ Route::get('/', function () {
     return view('navbar.layout');
 });
 
-Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
+Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']); 
-Route::get('register', [RegistController::class, 'index'])->name('register')->middleware('guest');
+Route::get('register', [RegisterController::class, 'index'])->name('register');

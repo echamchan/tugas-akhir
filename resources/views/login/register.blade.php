@@ -60,7 +60,7 @@
         </div>
         <br>
 
-        <button type="submit" class="btn login_btn">Daftar</button>
+        <button type="submit" class="btn login_btn">登録</button>
 
      </form>
     </div>
