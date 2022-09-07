@@ -43,7 +43,7 @@
 
         <div class="input-group mb-3">
            <div class="input-group-append">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
                 <input type="text" name="email" class="form-control input_user" value="" placeholder="Email" autofocus required> 
            </div>
         </div>

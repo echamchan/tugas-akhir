@@ -15,14 +15,16 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-Route::get('', function () {
+Route::get('DB_DATABASE', function () {
     return view('welcome');
 });
 
 Route::get('/', function () {
-    return view('navbar.layout');
+    return view('dashboard');
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'authenticate']); 
+Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
+
 Route::get('register', [RegisterController::class, 'index'])->name('register');

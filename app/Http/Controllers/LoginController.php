@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
 use Illuminate\Http\Request;
+use Hash;
+use Session;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Hash;
-
 
 class LoginController extends Controller
 {
@@ -18,7 +18,7 @@ class LoginController extends Controller
         ]);
     }
 
-    public function authenticate(Request $request)
+    public function authenticate(Request $request, $user)
     {
         $request->validate([
             'email' => 'required',
@@ -33,14 +33,19 @@ class LoginController extends Controller
 
                 Auth::login($user);
 
-                return redirect('/');
+                return redirect('/login');
             }
 
             return back()->withErrors([
-                'email' => 'Username Or Password Is Wrong!'
+                'email' => 'Email Or Password Is Wrong!'
             ]);
 
         }
 
+    }
+
+    public function Logout(Request $request)
+    {
+        // code...
     }
 }
