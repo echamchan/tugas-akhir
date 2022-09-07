@@ -8,6 +8,13 @@ use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
+
+    public function index(Request $request)
+    {
+        return view('login.register', [
+            'tittle' => 'ログイン'
+        ]);
+    }
     /*
     |--------------------------------------------------------------------------
     | Register Controller

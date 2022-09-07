@@ -56,7 +56,7 @@
         </div>
 
         <div>
-                <label for="customControlInline">あります？<a href="{{ route('login') }}">こちです</a></label>
+                <label for="customControlInline">あります？<a href="{{ route('login') }}">こちに</a></label>
         </div>
         <br>
 

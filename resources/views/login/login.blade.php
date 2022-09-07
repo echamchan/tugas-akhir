@@ -61,7 +61,7 @@
                 <label class="custom-control-label" for="customControlInline">覚えている</label>
         </div>
         <div class="mb-1">
-                    <label for="customControlInline">ありませんか？<a href="{{ route('register') }}">こちに</a></label>
+                    <label for="customControlInline">ありませんか？<a href="{{ url('register') }}">こちに</a></label>
         </div>
         <button type="submit" class="btn login_btn">ログイン</button>
 

@@ -49,7 +49,7 @@
               <ul class="nav-menu">
                 <li class="menu-active"><a href="/">Beranda</a></li>
                 <li><a href="{{ route('login') }}">Login</a></li>
-                <li><a href="{{ route('register') }}">Registrasi</a></li>
+                <li><a href="{{ URL('register') }}">Registrasi</a></li>
 
                 </li>
               </ul>

@@ -13,18 +13,24 @@ use App\Http\Controllers\RegisterController;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
 
 Route::get('DB_DATABASE', function () {
     return view('welcome');
 });
 
+*/
+
+
 Route::get('/', function () {
     return view('index');
+});
+
+Route::get('/register', function () {
+    return view('login.register');
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate']);
 Route::post('/logout', [LoginController::class, 'logout']);
 
-Route::get('register', [RegisterController::class, 'index'])->name('register');
+// Route::get('/register', [RegisterController::class, 'index'])->name('register');
