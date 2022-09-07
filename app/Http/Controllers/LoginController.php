@@ -18,7 +18,7 @@ class LoginController extends Controller
         ]);
     }
 
-    public function authenticate(Request $request, $user)
+    public function authenticate(Request $request)
     {
         $request->validate([
             'email' => 'required',
@@ -33,12 +33,10 @@ class LoginController extends Controller
 
                 Auth::login($user);
 
-                return redirect('/login');
+                return redirect('/');
             }
 
-            return back()->withErrors([
-                'email' => 'Email Or Password Is Wrong!'
-            ]);
+            return redirect('/login')->withErrors('');
 
         }
 
@@ -46,6 +44,12 @@ class LoginController extends Controller
 
     public function Logout(Request $request)
     {
-        // code...
+        Auth::logout();
+
+        $request->session()->invalidate();
+
+        $request->session()->regenerateToken();
+    
+        return redirect('/login');
     }
 }
