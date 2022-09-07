@@ -20,7 +20,7 @@ Route::get('DB_DATABASE', function () {
 });
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('index');
 });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
