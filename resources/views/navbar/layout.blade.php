@@ -48,8 +48,8 @@
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li class="menu-active"><a href="/">Beranda</a></li>
-                <li><a href="{{ route('login') }}">Login</a></li>
                 <li><a href="{{ URL('register') }}">Registrasi</a></li>
+                <li><a href="{{ route('login') }}">Login <i class="fa fa-sign-in-alt"></i></a></li>
 
                 </li>
               </ul>

@@ -13,9 +13,7 @@ class LoginController extends Controller
 
     public function index()
     {
-        return view('login.login', [
-            'tittle' => 'Login'
-        ]);
+        return view('login.login');
     }
 
     public function authenticate(Request $request)
@@ -36,7 +34,7 @@ class LoginController extends Controller
                 return redirect('/');
             }
 
-            return redirect('/login')->withErrors('');
+            return redirect('/login')->withErrors('loginError');
 
         }
 

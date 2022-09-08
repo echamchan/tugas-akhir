@@ -20,13 +20,13 @@
                         <img src="img/ball.png" class="brand_logo" alt="Logo" style="height: 150px; margin-left: 50px;">
                     </div><br>
                     <h3 class="text-center">楽天会員ログイン</h3>
-                        @if(session()->has('success'))
-                            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                                {{ session('success') }}
-                                <button type="button" class="btn-close" data-bs-dimiss="alert" aria-label="Close">
-                                </button>
-                            </div>
-                        @endif
+                        <!--// @if(session()->has('success'))
+                            //<div class="alert alert-success alert-dismissible fade show" role="alert">
+                                //{{ session('success') }}
+                              //  <button type="button" class="btn-close" data-bs-dimiss="alert" aria-label="Close">
+                            //    </button>
+                          //  </div>
+                        //@endif -->
 
                         @if(session()->has('loginError'))
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -56,10 +56,10 @@
             </div>
         </div>
 
-        <div class="custom-control custom-checkbox mb-1">
+        <!-- <div class="custom-control custom-checkbox mb-1">
                 <input type="checkbox" class="custom-control-input" id="customControlInline">
                 <label class="custom-control-label" for="customControlInline">覚えている</label>
-        </div>
+        </div> -->
         <div class="mb-1">
                     <label for="customControlInline">ありませんか？<a href="{{ url('register') }}">こちに</a></label>
         </div>
