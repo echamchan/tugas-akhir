@@ -21,9 +21,11 @@ class RegisterController extends Controller
         'password' => 'required|min:8|max:255',
     ]);
 
-      User::create($data);
+    $data['password'] = bcrypt($data['password']);
 
-      return redirect('/register');
+    User::create($data);
+
+    return redirect('/register');
 
     }
 }

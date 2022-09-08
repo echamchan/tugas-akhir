@@ -52,7 +52,7 @@
         <div class="input-group mb-3">
            <div class="input-group-append">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" name="name" class="form-control input_user" value="" placeholder="ユーザID"  required> 
+                <input type="text" name="name" class="form-control input_user" value="" placeholder="ユーザ ネム"  required> 
            </div>
         </div>
 
