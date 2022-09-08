@@ -25,9 +25,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Route::get('/register', function () {
-//     return view('login.register');
-// });
+Route::get('/coupon', function () {
+    return view('coupon');
+});
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);

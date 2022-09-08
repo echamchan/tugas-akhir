@@ -40,13 +40,13 @@
                     ようこそ, {{ auth()->user()->name }}
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">my クーポン</a></li>
+                    <li><a class="dropdown-item" href="{{ url('coupon') }}">my クーポン</a></li>
                     <li><a class="dropdown-item" href="#">買い物かご</a></li>
                     <li><hr class="dropdown-divider"></li>
 
                     <form action="/logout" method="post">
                       @csrf
-                      <button type="submit" class="dropdown-item">ログアウト<i class="fa fa-sign-out-alt"></i></button>
+                      <button type="submit" class="dropdown-item text-center">ログアウト <i class="fa fa-sign-out-alt"></i></button>
                     </form>
                   
                   </ul>
