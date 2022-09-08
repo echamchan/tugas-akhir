@@ -19,11 +19,12 @@
     <link rel="stylesheet" href="{{ URL::asset('css/animate.min.css')}}      ">
     <link rel="stylesheet" href="{{ URL::asset('css/owl.carousel.css')}}     ">
     <link rel="stylesheet" href="{{ URL::asset('css/main.css')}}             ">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     @yield('css')
   </head>
 
-  <body>
-      <header id="header" id="home">
+  <header id="header" id="home">
         <div class="container main-menu">
           <div class="row align-items-center justify-content-between d-flex">
             <div id="logo">
@@ -31,24 +32,25 @@
             </div>
             <nav id="nav-menu-container">
               <ul class="nav-menu">
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-@yield('css')
-  </head>
-  <body>
-      <header id="header" id="home">
-        <div class="container main-menu">
-          <div class="row align-items-center justify-content-between d-flex">
-            <div id="logo">
-              <a href="/" style="color:white; font-size:24px;"><img src="image/ppid.png" width="200px" height="55px"/></a>
-            </div>
-            <nav id="nav-menu-container">
-              <ul class="nav-menu">
                 <li class="menu-active"><a href="/">Beranda</a></li>
                 @auth
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ようこそ, {{ auth()->user()->name }}
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">my クーポン</a></li>
+                    <li><a class="dropdown-item" href="#">買い物かご</a></li>
+                    <li><hr class="dropdown-divider"></li>
+
+                    <form action="/logout" method="post">
+                      @csrf
+                      <button type="submit" class="dropdown-item">ログアウト<i class="fa fa-sign-out-alt"></i></button>
+                    </form>
+                  
+                  </ul>
+                </li>
 
                 @else
                 <li><a href="{{ URL('register') }}">Registrasi</a></li>
@@ -60,6 +62,8 @@
           </div>
         </div>
       </header>
+
+  <body>
 
       @yield('content')
 
@@ -77,6 +81,7 @@
       </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="{{URL::asset('js/vendor/jquery-2.2.4.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="{{URL::asset('js/vendor/bootstrap.min.js')}}"></script>
