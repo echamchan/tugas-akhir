@@ -33,14 +33,14 @@
             <nav id="nav-menu-container">
               <ul class="nav-menu">
                 <li class="menu-active"><a href="/">Beranda</a></li>
-                @auth
+              @auth
 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     ようこそ、{{ auth()->user()->name }} さん
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{ url('coupon') }}">my クーポン</a></li>
+                    <li><a class="dropdown-item" href="{{ url('coupon') }}">my クーポン<i class="fas fa-ticket-alt"></i></a></li>
                     <li><a class="dropdown-item" href="#">買い物かご</a></li>
                     <li><hr class="dropdown-divider"></li>
 
@@ -54,6 +54,7 @@
 
                 @else
                 <li><a href="{{ URL('register') }}">Registrasi</a></li>
+                <li><a href="{{ URL('mitreg') }}">Daftar Mitra</a></li>
                 <li><a href="{{ route('login') }}">Login <i class="fa fa-sign-in-alt"></i></a></li>
                 </li>
             @endauth
