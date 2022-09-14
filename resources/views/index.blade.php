@@ -6,18 +6,24 @@
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-12 pb-40 heaader-text text-center">
-                    <h1 class="pb-10">KELAS</h1>
+                    <h1 class="pb-10">Lapangan Untuk Futsal</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="single-product">
                         <div class="thumb">
-                            <img src="" alt="">
+                            <img src="img/lapangan.jpg" width="175px" height="120px" alt="">
                         </div>
-                        <h4>Rekayasa Perangkat Lunak</h4>
+                        <h4>Scudetto</h4>
                         <p>
-                            Who are in extremely love with eco friendly system.
+                            Harga: Rp. 50.000/Jam
+                        </p>
+                        <p>
+                            Sepatu: 
+                        </p>
+                        <p>
+                            Bola:
                         </p>
                         <a href="/rpl" class="primary-btn text-uppercase">View Details</a>
                     </div>

@@ -1958,7 +1958,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(138, 144, 255, 0.9);
+  background: #C0C0C0;
   transition: all 0.5s;
 }
 
@@ -2649,7 +2649,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area {
-  background: url(../img/footer-bg.jpg) center;
+  background: url(../img/footer.png) center;
   background-size: cover;
   padding-top: 100px;
 }
