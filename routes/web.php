@@ -34,6 +34,10 @@ Route::get('/details', function () {
     return view('details');
 });
 
+Route::get('/cart', function () {
+    return view('cart');
+});
+
 Route::get('/mitreg', [MitraController::class, 'index'])->name('mitreg')->middleware('guest');
 Route::post('/mitreg', [MitraController::class, 'store']);
 

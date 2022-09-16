@@ -232,7 +232,14 @@ img {
 						<h4 class="price">Harga: <span>Rp. 150.000 /Jam</span></h4>
 						<p class="vote"><strong>91%</strong> Menyukainya! <strong>(87 votes)</strong></p>
 						<div class="action">
-							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
+							<!-- <form action="/add-to-cart" method="post">
+                      		@csrf
+							<button class="add-to-cart btn btn-default" href="" type="button">add to cart</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+							</form> -->
+							<a href="/cart">	
+							<button class="add-to-cart btn btn-default" href="/cart" type="button">add to cart</button>
+							</a>
 							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
 						</div>
 					</div>
