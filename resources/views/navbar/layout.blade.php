@@ -40,7 +40,7 @@
                     ようこそ、{{ auth()->user()->name }} さん
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="{{ url('coupon') }}">my クーポン<i class="fas fa-ticket-alt"></i></a></li>
+                    <li><a class="dropdown-item" href="{{ url('coupon') }}">my クーポン <i class="fas fa-ticket-alt"></i></a></li>
                     <li><a class="dropdown-item" href="#">買い物かご</a></li>
                     <li><hr class="dropdown-divider"></li>
 
@@ -66,7 +66,7 @@
 
   <body>
 
-      @yield('content')
+      @yield('content')<br><br><br><br><br>
 
     <footer class="footer-area section-gap">
       <div class="container">

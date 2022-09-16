@@ -25,7 +25,7 @@
                         <p>
                             Bola:
                         </p>
-                        <a href="/rpl" class="primary-btn text-uppercase">View Details</a>
+                        <a href="/details" class="primary-btn text-uppercase">View Details</a>
                     </div>
                 </div>
             </div>

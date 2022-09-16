@@ -2417,7 +2417,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-product .thumb {
   padding: 40px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
 .single-product .details {
@@ -2651,7 +2651,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .footer-area {
   background: url(../img/footer.png) center;
   background-size: cover;
-  padding-top: 100px;
+  padding-top: 1px;
 }
 
 .footer-area .footer-nav li {

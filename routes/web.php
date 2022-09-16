@@ -30,6 +30,10 @@ Route::get('/coupon', function () {
     return view('coupon');
 });
 
+Route::get('/details', function () {
+    return view('details');
+});
+
 Route::get('/mitreg', [MitraController::class, 'index'])->name('mitreg')->middleware('guest');
 Route::post('/mitreg', [MitraController::class, 'store']);
 
@@ -39,3 +43,6 @@ Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/register', [RegisterController::class, 'index'])->middleware('guest');
 Route::post('/register', [RegisterController::class, 'store']);
+
+
+

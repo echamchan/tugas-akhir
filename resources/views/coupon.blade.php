@@ -15,17 +15,6 @@
             <div class="col-lg-4 col-md-6">
                 <div class="single-feature">
                     <a href="#" class="tittle d-flex flex-row">
-                        <span class="lnr lnr-user"></span>
-                        <h4>Top Absensi Kelas</h4>
-                    </a>
-                    <p>
-                        Usage of the Internet is becoming more common due to rapid advacement of technology and power
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-feature">
-                    <a href="#" class="tittle d-flex flex-row">
                         <span class="lnr lnr-license"></span>
                         <h4>Professional Service</h4>
                     </a>
