@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\MitraController;
+use App\Http\Controllers\MitlogController;
+use App\Http\Controllers\MitregController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,8 +40,22 @@ Route::get('/cart', function () {
     return view('cart');
 });
 
-Route::get('/mitreg', [MitraController::class, 'index'])->name('mitreg')->middleware('guest');
-Route::post('/mitreg', [MitraController::class, 'store']);
+Route::get('/mitra/dashboard', function () {
+	return view('mitra.ndex');
+});
+
+
+
+
+
+
+
+Route::get('/mitlog', [MitlogController::class, 'index'])->name('mitlog')->middleware('guest');
+Route::post('mitlog', [MitlogController::class, 'authenticate']);
+// Route::post()
+
+Route::get('/mitreg', [MitregController::class, 'index'])->name('mitreg')->middleware('guest');
+Route::post('/mitreg', [MitregController::class, 'store']);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
