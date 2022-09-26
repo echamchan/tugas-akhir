@@ -45,11 +45,6 @@ Route::get('/mitra/dashboard', function () {
 });
 
 
-
-
-
-
-
 Route::get('/mitlog', [MitlogController::class, 'index'])->name('mitlog')->middleware('guest');
 Route::post('mitlog', [MitlogController::class, 'authenticate']);
 // Route::post()
