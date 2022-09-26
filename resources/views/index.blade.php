@@ -11,7 +11,7 @@
         }        
         body{
             font-family: Space Grotesk;
-            background-color: #00385d;
+            background-color: #cfd4d8;
             overflow-x: hidden;
         }
        
